@@ -13,8 +13,12 @@ const userSchema=mongoose.Schema({
         type:String,
         required:true
     },
+    confirmpassword:{
+        type:String,
+        required:true
+    },
 
 })
 
-const userModel=mongoose.model('user',userSchema)
+const userModel=mongoose.model('user', userSchema)
 module.exports=userModel
